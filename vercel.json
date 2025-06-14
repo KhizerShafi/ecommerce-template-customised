@@ -1,13 +1,6 @@
 {
-    "builds": [{
-      "src": "bazaz/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.3" }
-    }],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "bazaz/wsgi.py"
-      }
-    ]
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ]
 }
