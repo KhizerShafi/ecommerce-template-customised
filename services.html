@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaz - Our Services</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <h1 class="service-title" data-aos="fade-down">Our Services</h1>
+    </header>
+    
+    <section class="services-container">
+        <div class="service-box" data-aos="fade-up">
+            <h2>Custom Clothing</h2>
+            <p>Send us any design, and we'll bring it to life with perfect tailoring.</p>
+        </div>
+        
+        <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+            <h2>Premium Fabrics</h2>
+            <p>Choose from high-quality materials to make your outfit stand out.</p>
+        </div>
+        
+        <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+            <h2>Expert Tailoring</h2>
+            <p>Our skilled tailors ensure a flawless fit for every order.</p>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+{% endblock %}
