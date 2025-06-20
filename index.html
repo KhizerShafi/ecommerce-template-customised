@@ -33,6 +33,23 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
       rel="stylesheet"
     />
+      <!-- Your custom CSS -->
+  <style>
+    @media (min-width: 768px) and (max-width: 991px) {
+      .collection-content h3 {
+        font-size: 1.5rem;
+      }
+
+      .collection-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .collection-content {
+        padding: 2rem;
+      }
+    }
+  </style>
   </head>
 
   <body class="homepage">
@@ -399,43 +416,47 @@
       </div>
     </section>
 
- 
-    <section class="collection bg-light position-relative py-5">
-      <div class="container">
-        <div class="row">
-          <div class="title-xlarge text-uppercase txt-fx domino">
-            Collection
+ <section class="collection bg-light position-relative py-5">
+  <div class="container">
+    <div class="row">
+      <div class="title-xlarge text-uppercase txt-fx domino">
+        Collection
+      </div>
+
+      <div class="collection-item row align-items-stretch my-5">
+        <!-- Left Image Column -->
+        <div class="col-md-6 column-container mb-4 mb-md-0">
+          <div class="image-holder h-100">
+            <img
+              src="images/frock/fr (1).jpg"
+              alt="collection"
+              class="product-image img-fluid h-100 w-100 object-fit-cover"
+            />
           </div>
-          <div class="collection-item d-flex flex-wrap my-5">
-            <div class="col-md-6 column-container">
-              <div class="image-holder">
-                <img
-                  src="images/frock/fr (1).jpg"
-                  alt="collection"
-                  class="product-image img-fluid"
-                />
-              </div>
-            </div>
-            <div class="col-md-6 column-container bg-white">
-              <div class="collection-content p-5 m-0 m-md-5">
-                <h3 class="element-title text-uppercase">
-                  Classic winter collection
-                </h3>
-                <p>
-                  Light and breezy, summer fashion brings comfort and style.
-                  Soft cotton, flowing linen, and airy fabrics keep you cool.The
-                  essence of summer lies in simplicity, elegance, and ease. Let
-                  every outfit reflect the warmth and vibrancy of sunny days.
-                </p>
-                <a href="#" class="btn btn-dark text-uppercase mt-3"
-                  >Shop Collection</a
-                >
-              </div>
-            </div>
+        </div>
+
+        <!-- Right Text Column -->
+        <div class="col-md-6 column-container bg-white d-flex flex-column justify-content-center">
+          <div class="collection-content p-4 p-md-5">
+            <h3 class="element-title text-uppercase">
+              Classic winter collection
+            </h3>
+            <p>
+              Light and breezy, summer fashion brings comfort and style.
+              Soft cotton, flowing linen, and airy fabrics keep you cool.
+              The essence of summer lies in simplicity, elegance, and ease.
+              Let every outfit reflect the warmth and vibrancy of sunny days.
+            </p>
+            <a href="#" class="btn btn-dark text-uppercase mt-3">
+              Shop Collection
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
    
     <section class="instagram position-relative">
       <div
